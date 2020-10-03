@@ -224,7 +224,7 @@ void logdie(const char *fmt, ...) {
 	va_start(args, fmt);
 	do_log(SYSLOG_LEVEL_INFO, fmt, args);
 	va_end(args);
-	cleanup_exit(255);
+	exit(255);
 }
 
 /* Log this message (information that usually should go to the log). */
