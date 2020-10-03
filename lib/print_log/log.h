@@ -137,5 +137,4 @@ void log_redirect_stderr_to(const char *logfile);
 void set_log_handler(log_handler_fn *handler, void *ctx);
 void do_log2(LogLevel level, const char *fmt, ...);
 
-
 #endif

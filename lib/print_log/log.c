@@ -179,7 +179,7 @@ SyslogFacility log_facility_number(char *name) {
 
 /* 获取当前日志工厂名字 */
 const char *log_facility_name(SyslogFacility facility) {
-	u_int i;
+	int i;
 
 	for (i = 0; log_facilities[i].name; i++)
 		if (log_facilities[i].val == facility)
@@ -200,7 +200,7 @@ LogLevel log_level_number(char *name) {
 
 /* 获取当前日志水平名字 */
 const char *log_level_name(LogLevel level) {
-	u_int i;
+	int i;
 
 	for (i = 0; log_levels[i].name != NULL; i++)
 		if (log_levels[i].val == level)
