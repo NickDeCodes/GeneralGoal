@@ -74,7 +74,6 @@ void *thread_routine(void *argv) {
     return NULL;
 }
 
-
 /* 线程池初始化 */
 void threadpool_init(threadpool_t *pool, int idle_threads, int max_threads) {
 
